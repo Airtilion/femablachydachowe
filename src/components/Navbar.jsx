@@ -90,7 +90,7 @@ const Navbar = () => {
             <img src={logo} alt="Skrócone logo firmy FEMA" className={`w-[74px] transition-all duration-1000 ease-in-out ${isVisible ? 'element-visible-top' : 'element-hidden-top'}`} />
             <ul className={`flex gap-[48px] items-center max-md:hidden`}>
                 {menu.map((item, index) => (
-                    <a href={item.link} key={index} onClick={(e) => scrollToSection(e, item.link)} className={`transition-all duration-1000 ease-in-out ${isVisible ? 'element-visible-top' : 'element-hidden-top'}`} style={{transitionDelay: index*200 + 'ms'}}><li>{item.name}</li></a>
+                    <a href={item.link} key={index} onClick={(e) => scrollToSection(e, item.link)} className={` transition-all duration-1000 ease-in-out ${isVisible ? 'element-visible-top' : 'element-hidden-top'}`} style={{transitionDelay: index*200 + 'ms'}}><li className='hover:scale-[1.1] hover:text-gray-400 duration-500'>{item.name}</li></a>
                 ))}
             </ul>
 

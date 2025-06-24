@@ -62,10 +62,10 @@ const Header = () => {
       <div className='w-full h-[1px] bg-[#161616] absolute right-0 top-[22%] z-2 max-2xl:top-[25%]'></div>
       <div className='w-full h-[1px] bg-[#161616] absolute right-0 bottom-[22%] z-2 max-2xl:bottom-[25%]'></div>
 
-      <section ref={ref} className='relative z-10 flex flex-col justify-center h-full w-[45%] gap-[64px] max-xl:gap-[32px] max-xl:w-[50%] max-lg:w-full max-lg:items-center'>
-        <img src={logo} width={130} alt='Logo firmy fema' className={`max-2xl:w-[110px] max-md:w-[90px] transition-all duration-1000 ease-in-out ${isVisible ? 'element-visible-left' : 'element-hidden-left'}`} style={{ transitionDelay: '100ms' }} />
+      <section ref={ref} className='relative z-10 flex flex-col justify-center h-full w-[45%] gap-[64px] max-xl:gap-[24px] max-xl:w-[50%] max-lg:w-full max-lg:items-center'>
+        <img src={logo} width={130} alt='Logo firmy fema' className={`max-2xl:w-[110px] max-xl:w-[100px] max-md:w-[90px] transition-all duration-1000 ease-in-out ${isVisible ? 'element-visible-left' : 'element-hidden-left'}`} style={{ transitionDelay: '100ms' }} />
         <div className='max-lg:flex max-lg:flex-col max-lg:items-center'>
-          <h1 className={`text-[40px] font-semibold max-2xl:text-[35px] max-xl:text-[30px] max-lg:text-center max-lg:max-w-[700px] max-sm:text-[20px] transition-all duration-1000 ease-in-out ${isVisible ? 'element-visible-left' : 'element-hidden-left'}`} style={{ transitionDelay: '200ms' }}>Pokrycia dachowe w Tarnowie i&nbsp;regionie – blacha na wymiar</h1>
+          <h1 className={`text-[40px] font-semibold max-2xl:text-[35px] max-xl:text-[25px] max-lg:text-center max-lg:max-w-[700px] max-sm:text-[20px] transition-all duration-1000 ease-in-out ${isVisible ? 'element-visible-left' : 'element-hidden-left'}`} style={{ transitionDelay: '200ms' }}>Pokrycia dachowe w Tarnowie i&nbsp;regionie – blacha na wymiar</h1>
           <p className={`text-[20px] font-light mt-[16px] max-2xl:text-[18px] max-xl:text-[16px] max-sm:text-[13px] max-lg:text-center transition-all duration-1000 ease-in-out ${isVisible ? 'element-visible-left' : 'element-hidden-left'}`} style={{ transitionDelay: '300ms' }}>Wykonujemy blachy na wymiar, systemy rynnowe, blachy II gatunku i akcesoria w regionie Tarnowskim </p>
         </div>
         <p className={`font-light text-[16px] max-xl:text-[14px] transition-all duration-1000 ease-in-out ${isVisible ? 'element-visible-left' : 'element-hidden-left'}`} style={{ transitionDelay: '400ms' }}>Na rynku od 1992 roku</p>
