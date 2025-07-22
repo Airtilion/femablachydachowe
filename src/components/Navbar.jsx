@@ -61,7 +61,7 @@ const Navbar = () => {
         if (element) {
             const offset = 128;
             const y = element.getBoundingClientRect().top + window.pageYOffset - offset;
-            window.scrollTo({top: y, behavior: 'smooth'});
+            window.scrollTo({ top: y, behavior: 'smooth' });
         }
     };
 
@@ -90,7 +90,9 @@ const Navbar = () => {
             <img src={logo} alt="Skrócone logo firmy FEMA" className={`w-[74px] transition-all duration-1000 ease-in-out ${isVisible ? 'element-visible-top' : 'element-hidden-top'}`} />
             <ul className={`flex gap-[48px] items-center max-md:hidden`}>
                 {menu.map((item, index) => (
-                    <a href={item.link} key={index} onClick={(e) => scrollToSection(e, item.link)} className={` transition-all duration-1000 ease-in-out ${isVisible ? 'element-visible-top' : 'element-hidden-top'}`} style={{transitionDelay: index*200 + 'ms'}}><li className='hover:scale-[1.1] hover:text-gray-400 duration-500'>{item.name}</li></a>
+                    <li key={index} className='hover:scale-[1.1] hover:text-gray-400 duration-500'>
+                        <a href={item.link} onClick={(e) => scrollToSection(e, item.link)} className={` transition-all duration-1000 ease-in-out ${isVisible ? 'element-visible-top' : 'element-hidden-top'}`} style={{ transitionDelay: index * 200 + 'ms' }}>{item.name}</a>
+                    </li>
                 ))}
             </ul>
 
@@ -98,7 +100,7 @@ const Navbar = () => {
                 ref={menuRef}
                 onClick={menuVisibilityHandle}
                 className='hidden max-md:flex hamburger-menu duration-500 w-14 h-14 bg-white fixed flex-col justify-between items-center py-4 px-3 right-[64px] top-[32px] z-70 max-sm:right-[32px]'
-                // style={{ background: isScrolled && '#898989', top: isScrolled && '24px' }}
+            // style={{ background: isScrolled && '#898989', top: isScrolled && '24px' }}
             >
                 <span className={`w-8 h-1 bg-[#222222] duration-500 rounded-full`}></span>
                 <span className={`w-8 h-1 bg-[#222222] duration-500 rounded-full`}></span>
@@ -108,7 +110,9 @@ const Navbar = () => {
             <div ref={mobileMenuRef} className='menu-mobile fixed top-0 left-0 w-full h-dvh bg-[#000000c1] hidden backdrop-blur-[5px] flex-col gap-[32px] justify-center items-center z-60'>
                 <ul className='flex gap-[48px] items-center flex-col text-[18px] xl:text-[17px] text-white'>
                     {menu.map((item, index) => (
-                        <a href={item.link} onClick={(e) => {scrollToSection(e, item.link); menuVisibilityHandle()}} key={index}><li>{item.name}</li></a>
+                        <li  key={index}>
+                            <a href={item.link} onClick={(e) => { scrollToSection(e, item.link); menuVisibilityHandle() }}>{item.name}</a>
+                        </li>
                     ))}
                 </ul>
             </div>
