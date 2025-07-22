@@ -55,7 +55,7 @@ const Header = () => {
       <img
         src={photos[0]}
         key={photos[0] + '-bg'}
-        alt="Tło przedstawiające obraz dachu"
+        alt="Blacha dachowa na wymiar w regionie Tarnowskim"
         className='absolute w-full h-full top-0 left-0 object-cover brightness-10 z-0 header-loading'
       />
 
@@ -63,7 +63,7 @@ const Header = () => {
       <div className='w-full h-[1px] bg-[#161616] absolute right-0 bottom-[22%] z-2 max-2xl:bottom-[25%]'></div>
 
       <section ref={ref} className='relative z-10 flex flex-col justify-center h-full w-[45%] gap-[64px] max-2xl:gap-[32px] max-xl:gap-[24px] max-xl:w-[50%] max-lg:w-full max-lg:items-center'>
-        <img src={logo} width={130} alt='Logo firmy fema' className={`max-2xl:w-[110px] max-xl:w-[100px] max-md:w-[90px] transition-all duration-1000 ease-in-out ${isVisible ? 'element-visible-left' : 'element-hidden-left'}`} style={{ transitionDelay: '100ms' }} />
+        <img src={logo} width={130} alt='Fema pokrycia dachowe Tarnów' className={`max-2xl:w-[110px] max-xl:w-[100px] max-md:w-[90px] transition-all duration-1000 ease-in-out ${isVisible ? 'element-visible-left' : 'element-hidden-left'}`} style={{ transitionDelay: '100ms' }} />
         <div className='max-lg:flex max-lg:flex-col max-lg:items-center'>
           <h1 className={`text-[40px] font-semibold max-2xl:text-[30px] max-xl:text-[25px] max-lg:text-center max-lg:max-w-[700px] max-sm:text-[20px] transition-all duration-1000 ease-in-out ${isVisible ? 'element-visible-left' : 'element-hidden-left'}`} style={{ transitionDelay: '200ms' }}>Pokrycia dachowe w Tarnowie i&nbsp;regionie – blacha na wymiar</h1>
           <p className={`text-[20px] font-light mt-[16px] max-2xl:text-[18px] max-xl:text-[16px] max-sm:text-[13px] max-lg:text-center transition-all duration-1000 ease-in-out ${isVisible ? 'element-visible-left' : 'element-hidden-left'}`} style={{ transitionDelay: '300ms' }}>Wykonujemy blachy na wymiar, systemy rynnowe, blachy II gatunku i akcesoria w regionie Tarnowskim </p>
@@ -74,7 +74,7 @@ const Header = () => {
       {photos.slice(1).map((photoSrc, index) => {
         const originalIndex = index + 1;
         return (
-          <img key={photoSrc} src={photoSrc} alt="" className={`absolute w-[200px] h-[680px] object-cover rounded-[40px] top-[50%] translate-y-[-50%] z-10 max-2xl:w-[150px] max-2xl:h-[500px] max-2xl:rounded-[25px] max-xl:w-[100px] max-xl:h-[450px] max-xl:rounded-[20px] max-lg:w-[150px] max-lg:h-[100px] max-lg:top-auto max-lg:bottom-[40px] max-lg:translate-y-0 ${isAnimating && originalIndex === 4 ? 'animate-expand' : 'animate-slide'}`} style={{ right: ((breakpoint === 'big'? 232 : breakpoint === '2xl' ? 166 : breakpoint === 'xl' ? 112 : 166) * originalIndex) - (breakpoint === 'big'? 332 : breakpoint === '2xl' ? 241 : breakpoint === 'xl' ? 162 : breakpoint === 'lg' ? 241 : breakpoint === 'md' ? 407 : 573) }} />
+          <img key={photoSrc} src={photoSrc} alt="Pokrycia dachowe" className={`absolute w-[200px] h-[680px] object-cover rounded-[40px] top-[50%] translate-y-[-50%] z-10 max-2xl:w-[150px] max-2xl:h-[500px] max-2xl:rounded-[25px] max-xl:w-[100px] max-xl:h-[450px] max-xl:rounded-[20px] max-lg:w-[150px] max-lg:h-[100px] max-lg:top-auto max-lg:bottom-[40px] max-lg:translate-y-0 ${isAnimating && originalIndex === 4 ? 'animate-expand' : 'animate-slide'}`} style={{ right: ((breakpoint === 'big'? 232 : breakpoint === '2xl' ? 166 : breakpoint === 'xl' ? 112 : 166) * originalIndex) - (breakpoint === 'big'? 332 : breakpoint === '2xl' ? 241 : breakpoint === 'xl' ? 162 : breakpoint === 'lg' ? 241 : breakpoint === 'md' ? 407 : 573) }} />
         )
       })}
     </header>

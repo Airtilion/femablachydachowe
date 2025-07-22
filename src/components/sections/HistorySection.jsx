@@ -12,7 +12,7 @@ const HistorySection = () => {
         <article id="o-firmie" className='w-[1400px] mx-auto flex gap-[32px] justify-between items-end max-2xl:w-[1140px] max-xl:w-[960px] max-lg:w-[90%] max-lg:flex-col'>
             <div ref={ref} className={`w-[780px] flex flex-col gap-[32px] max-2xl:w-[500px] max-lg:w-full transition-all duration-1000 ease-in-out ${isVisible ? 'element-visible-left' : 'element-hidden-left'}`}>
                 <h2 className='text-[30px] font-semibold max-2xl:text-[25px] max-xl:text-[22px] max-lg:text-[20px]'>Tradycja i nowoczesność w produkcji blach&nbsp;dachowych</h2>
-                <img src={roofImage} alt="Obraz przedstawiający dach i elementy zabezpieczenia na nim" className='h-[375px] object-cover w-full shadow-[4px_4px_20px_#00000040] max-xl:h-[425px] max-lg:h-[300px]'/>
+                <img src={roofImage} alt="Pokrycie dachowe z czarnej blachodachówki oraz łapami śniegowymi - nowoczesność z funkcjonalnością" className='h-[375px] object-cover w-full shadow-[4px_4px_20px_#00000040] max-xl:h-[425px] max-lg:h-[300px]'/>
             </div>
 
             <div ref={ref2} className={`flex-1 transition-all duration-1000 ease-in-out ${isVisible2 ? 'element-visible-right' : 'element-hidden-right'}`}>

@@ -28,11 +28,11 @@ const AboutSection = () => {
         <section className='py-[48px] bg-[#1A1A1A]'>
             <article className='w-[1400px] mx-auto max-2xl:w-[1140px] max-xl:w-[960px] max-lg:w-[90%]'>
                 <div ref={ref2} className={`relative p-[32px] overflow-hidden flex flex-col gap-[16px] shadow-[4px_4px_20px_#00000040] transition-all duration-1000 ease-in-out ${isVisible2 ? 'element-visible-bottom' : 'element-hidden-bottom'}`}>
-                    <h2 className='relative z-30 text-[24px] font-semibold max-xl:text-[22px] max-lg:text-[20px]'>Firma z tradycją – działamy nieprzerwanie od 1992 roku</h2>
+                    <h2 className='relative z-30 text-[24px] font-semibold max-xl:text-[22px] max-lg:text-[20px]'>Firma z tradycją - działamy nieprzerwanie od 1992 roku</h2>
                     <p className='relative z-30 text-[16px] font-light w-[660px] max-xl:text-[14px] max-lg:w-[90%]'>Dzięki wieloletniemu doświadczeniu oraz zaangażowaniu w nieustanny rozwój procesów produkcyjnych, zyskaliśmy zaufanie setek klientów – zarówno właścicieli małych domów jednorodzinnych, jak i większych inwestorów budowlanych. </p>
 
                     <div className='absolute top-0 left-0 w-full h-full bg-linear-to-r from-[#000000] to-[#00000000] z-20'></div>
-                    <img src={sectionBg} alt="Obraz tła sekcji przedstawiający pokrycie dachowe" className='w-full h-full object-cover object-center absolute top-0 left-0 z-10' />
+                    <img src={sectionBg} alt="Czarne stalowe płotki śniegowe montowane na profiliwanej blachodachówce - zabezpieczenie dachu przed zsuwaniem się śniegu" className='w-full h-full object-cover object-center absolute top-0 left-0 z-10' />
                 </div>
 
                 <div className='flex gap-[32px] mt-[32px] max-lg:flex-wrap w-full'>

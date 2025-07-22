@@ -24,24 +24,39 @@ const menu = [
 const Footer = () => {
     const data = new Date();
 
+    const scrollToSection = (e, hash) => {
+        e.preventDefault()
+        const id = hash.slice(1)
+        const el = document.getElementById(id)
+        if (el) {
+            const offset = 128
+            const y = el.getBoundingClientRect().top + window.pageYOffset - offset
+            window.scrollTo({ top: y, behavior: 'smooth' })
+        }
+    }
+
     return (
         <footer className='relative py-[32px] flex flex-col gap-[32px]'>
             <section className='flex justify-between w-[1400px] mx-auto max-2xl:w-[1200px] max-xl:w-[960px] max-lg:w-[90%] max-lg:flex-col max-lg:gap-[32px]'>
                 <article className='flex items-center gap-[64px] max-xl:flex-col max-xl:items-start max-xl:gap-[32px] max-lg:items-center'>
-                    <img src={logo} alt="Logo firmy fema" className='h-[125px]'/>
+                    <img src={logo} alt="Logo firmy fema" className='h-[125px]' />
                     <div>
                         <p className='text-[14px] mb-[8px] max-lg:text-center'>Zapraszamy do polubienia:</p>
                         <a href="https://www.facebook.com/profile.php?id=61576876537530" className='flex gap-[8px] group '>
-                            <Icon icon="ic:baseline-facebook" width="24" height="24" className='text-white group-hover:text-[#A3886E] duration-500'/>
+                            <Icon icon="ic:baseline-facebook" width="24" height="24" className='text-white group-hover:text-[#A3886E] duration-500' />
                             <p className='group-hover:text-[#A3886E] duration-500'>FEMA - blachy dachowe</p>
                         </a>
                     </div>
                 </article>
                 <article className='max-lg:flex max-lg:flex-col max-lg:items-center'>
                     <h2 className='text-[18px] font-bold mb-[8px] max-md:text-[16px]'>Nawigacja</h2>
-                    <ul className='flex flex-col gap-[8px] max-lg:items-center'>{menu.map((el, index) => (
-                        <li key={index}><a href={el.link} className='text-[16px] font-light max-md:text-[14px]'>{el.name}</a></li>
-                    ))}</ul>
+                    <ul className='flex flex-col gap-[8px] max-lg:items-center'>
+                        {menu.map((el, index) => (
+                            <li key={index}>
+                                <a href={el.link} onClick={(e) => scrollToSection(e, el.link)} className='text-[16px] font-light max-md:text-[14px]'>{el.name}</a>
+                            </li>
+                        ))}
+                    </ul>
                 </article>
                 <article className='flex flex-col gap-[8px] max-lg:items-center'>
                     <h2 className='text-[18px] font-bold max-md:text-[16px] max-sm:text-center'>Dane firmy</h2>
@@ -60,7 +75,7 @@ const Footer = () => {
             </section>
 
             <div className='absolute inset-0 bg-[#1a1a1adc] backdrop-blur-[10px] z-[-1]'></div>
-            <img src={bg} alt="Tło przedstawjające dach z blachodachówki na czarnym tle" className='w-full h-full object-cover absolute inset-0 z-[-2]'/>
+            <img src={bg} alt="Tło przedstawjające dach z blachodachówki na czarnym tle" className='w-full h-full object-cover absolute inset-0 z-[-2]' />
         </footer>
     )
 }

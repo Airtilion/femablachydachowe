@@ -48,7 +48,7 @@ const FaqSection = () => {
 
     return (
         <section id="faq" className='w-[1400px] mx-auto flex gap-[64px] max-2xl:w-[1140px] max-xl:w-[960px] max-lg:w-[90%] max-lg:flex-col'>
-            <img ref={ref} src={sectionImage} width={400} alt="Zdjęcie przedstawiające pokrycie dachowe na dwuczęściowym budynku" className={`w-[400px] max-h-[600px] object-cover max-xl:max-h-[650px] max-lg:w-full max-lg:h-[300px] transition-all duration-1000 ease-in-out ${isVisible ? 'element-visible-left' : 'element-hidden-left'}`} />
+            <img ref={ref} src={sectionImage} width={400} alt="Nowoczesne pokrycie dachowe z blachodachówki na dwuczęściowym budynku mieszkalnym" className={`w-[400px] max-h-[600px] object-cover max-xl:max-h-[650px] max-lg:w-full max-lg:h-[300px] transition-all duration-1000 ease-in-out ${isVisible ? 'element-visible-left' : 'element-hidden-left'}`} />
             <article className='flex flex-col gap-[16px]'>
                 <h2 className='text-[25px] font-semibold max-xl:text-[22px]'>Najczęściej zadawane pytania o pokrycia dachowe</h2>
                 <p className='text-[16px] font-light max-xl:text-[14px]'>Poniżej zebraliśmy najczęściej zadawane pytania dotyczące naszej działalności, aby pomóc Ci rozwiać wątpliwości i ułatwić wybór najlepszego rozwiązania. </p>

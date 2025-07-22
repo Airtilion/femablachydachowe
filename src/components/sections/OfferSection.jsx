@@ -12,7 +12,7 @@ const offer = [
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum diam eget nisi scelerisque interdum. Sed placerat nibh vel dignissim ornare. Aenean vestibulum convallis nunc et pharetra. Aliquam id ante urna. Praesent porta nunc metus, vel tincidunt libero laoreet non. Proin quis lacinia est, ac congue est. Praesent libero dolor, luctus at volutpat egestas, maximus sit amet nunc.',
         ],
         image: offer1,
-        alt: 'Zdjęcie przedstawiające pokrycie dachowe z blachy'
+        alt: 'Nowoczesne pokrycie dachowe z czarnej blachy na wymiar'
     },
     {
         name: 'Systemy rynnowe',
@@ -21,7 +21,7 @@ const offer = [
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum diam eget nisi scelerisque interdum. Sed placerat nibh vel dignissim ornare. Aenean vestibulum convallis nunc et pharetra. Aliquam id ante urna. Praesent porta nunc metus, vel tincidunt libero laoreet non. Proin quis lacinia est, ac congue est. Praesent libero dolor, luctus at volutpat egestas, maximus sit amet nunc.',
         ],
         image: offer2,
-        alt: 'Zdjęcie przedstawiające systemy rynnowe'
+        alt: 'Trwały czarny system rynnowy z wysokiej jakości stali'
     },
     {
         name: 'Blacha II kategorii',
@@ -30,7 +30,7 @@ const offer = [
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum diam eget nisi scelerisque interdum. Sed placerat nibh vel dignissim ornare. Aenean vestibulum convallis nunc et pharetra. Aliquam id ante urna. Praesent porta nunc metus, vel tincidunt libero laoreet non. Proin quis lacinia est, ac congue est. Praesent libero dolor, luctus at volutpat egestas, maximus sit amet nunc.',
         ],
         image: offer3,
-        alt: 'Zdjęcie przedstawiające blachę drugiej kategorii'
+        alt: 'Falowana blacha dachowa II kategorii o matowej strukturze - ekonomiczne i estetyczne pokrycie'
     },
     {
         name: 'Akcesoria',
@@ -39,7 +39,7 @@ const offer = [
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum diam eget nisi scelerisque interdum. Sed placerat nibh vel dignissim ornare. Aenean vestibulum convallis nunc et pharetra. Aliquam id ante urna. Praesent porta nunc metus, vel tincidunt libero laoreet non. Proin quis lacinia est, ac congue est. Praesent libero dolor, luctus at volutpat egestas, maximus sit amet nunc.',
         ],
         image: offer4,
-        alt: 'Zdjęcie przedstawiające akcesoria do pokryć dachowych'
+        alt: 'Akcesoria dachowe: uchwyty, mocowania i zabezpieczenia'
     }
 ]
 
