@@ -1,6 +1,6 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import logoAirtilion from '../assets/images/airtilion-footer.svg'
-import bg from '../assets/images/bg-1.webp'
+import bg from '../assets/images/bg-1-lg.webp'
 import logo from '../assets/images/logo.svg'
 const menu = [
     {

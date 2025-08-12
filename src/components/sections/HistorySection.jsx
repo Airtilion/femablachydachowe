@@ -1,5 +1,5 @@
 import { Icon } from '@iconify/react/dist/iconify.js';
-import roofImage from '../../assets/images/bg-2.webp'
+import roofImage from '../../assets/images/bg-10-lg.webp'
 import useIntersectionObserver from '../../hooks/useObserver';
 
 const simpleList = ['Blacha na wymiar', 'Systemy rynnowe', 'Blacha II gatunku', 'Akcesoria'];
